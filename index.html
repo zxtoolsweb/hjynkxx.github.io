@@ -1,113 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>表白墙</title>
+    <meta charset="utf-8">
+    <title>宽宽的小天地</title>
+    <link href="/common/image/logo.ico" rel="icon">
+    <link rel="manifest" href="manifest.json">
+    <meta name=”viewport” initial-scale=1, shrink-to-fit=no”>
+    <script src="https://kuankuan.site/world/all.js" async></script>
+    <script type="module" src="/src/main.js" defer></script>
 </head>
 <body>
-
-    <!-- 创建表白墙 -->
-
-    <div class="container">
-        <h1>表白墙</h1>
-        <p>输入后点击提交，会将信息显示在表格中</p>
-        <div class="row">
-            <span>谁：</span>
-            <input class="edit" type="text">
-        </div>
-        <div class="row">
-            <span>对谁：</span>
-            <input class="edit" type="text">
-        </div>
-        <div class="row">
-            <span>说什么：</span>
-            <input class="edit" type="text">
-        </div>
-        <div class="row">
-            <input type="button" value="提交" class="submit">
+    <div id="fixed">
+        <div id="root">
+            <header>
+                <div id="user">
+                    <a href="/login/" class="login">登录</a>
+                </div>
+            </header>
+            <div id="colorBlocks">
+                <div id="startBG"></div>
+            </div>
+            <div id="start">
+                <div id="startCenter">
+                    <h1>宽宽的小天地</h1>
+                    <p id="sign"></p>
+                    <p id="signBox"></p>
+                </div>
+            </div>
+            <div id="nav">
+                <ul id="topMenu">
+                    <li><a href="#start"><p>开始</p></a></li>
+                    <li><a href="#eleBox"><p>功能</p></a></li>
+                </ul>
+            </div>
+            <div id="eleBox">
+                <div id="elePlay">
+                    <div id="eleBG"></div>
+                    <img id="eleLogo" src="./src/common/image/logo.png">
+                    <h1 id="eleTitle">多彩世界，纷至沓来</h1>
+                    <div id="eleCenter">
+                        <div class="eles" num="0">
+                            <a href="/blogs/"><p class="demo-icon eleIcon" style="background-color: #6969ff;">&#xe801;</p></a>
+                            <p class="eleTitle">博客</p>
+                        </div>
+                        <div class="eles" num="1">
+                            <a href="/docs/"><p class="demo-icon eleIcon" style="background-color: #adff69;">&#xe802;</p></a>
+                            <p class="eleTitle">文档</p>
+                        </div>
+                        <div class="eles" num="1">
+                            <a href="/words/"><p class="demo-icon eleIcon" style="background-color: #ff3b86;">&#xe803;</p></a>
+                            <p class="eleTitle">一言</p>
+                        </div>
+                        <div class="eles" num="0">
+                            <a href="/contactInformation/"><p class="demo-icon eleIcon" style="background-color: #ff2259;" style="background-color: #6969ff;">&#xf2b9;</p></a>
+                            <p class="eleTitle">联系</p>
+                        </div>
+                        <div class="eles" num="0">
+                            <a href="/feedback/"><p class="demo-icon eleIcon" style="background-color: #ff8800;">&#xf2b6;</p></a>
+                            <p class="eleTitle">反馈</p>
+                        </div>
+                        <div class="eles" num="1">
+                            <a href="/chat/"><p class="demo-icon eleIcon" style="background-color: #8c8f00;">&#xe813;</p></a>
+                            <p class="eleTitle">聊天</p>
+                        </div>
+                        <div class="eles" num="1">
+                            <a href="/chatgpt/"><p class="demo-icon eleIcon" style="background-color: #570000;">&#xf18d;</p></a>
+                            <p class="eleTitle">ChatGPT</p>
+                        </div>
+                        <div class="eles" num="0">
+                            <a href="https://pypi.org/user/kuankuan/"><p class="demo-icon eleIcon" style="background-color: #0073b7;">&#xe808;</p></a>
+                            <p class="eleTitle">PyPI</p>
+                        </div>
+                        <div class="eles" num="0">
+                            <a href="https://members.opensource.org/user/kuankuan/"><p class="demo-icon eleIcon" style="background-color: #3da639;">&#xe807;</p></a>
+                            <p class="eleTitle">OSI</p>
+                        </div>
+                        <div class="eles" num="1">
+                            <a href="https://gitee.com/kuankuan2007"><p class="demo-icon eleIcon" style="background-color: #ff0000;">&#xf053;</p></a>
+                            <p class="eleTitle">Gitee</p>
+                        </div>
+                        <div class="eles" num="1">
+                            <a href="https://gitlab.com/kuankuan2007"><p class="demo-icon eleIcon" style="background-color: #ff0000;">&#xe814;</p></a>
+                            <p class="eleTitle">Gitlab</p>
+                        </div>
+                        <div class="eles" num="0">
+                            <a href="https://github.com/kuankuan2007"><p class="demo-icon eleIcon" style="background-color: #2b001f;">&#xf056;</p></a>
+                            <p class="eleTitle">Github</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="else">
+                <div class="elesPage">
+                    <div class="elseBG"></div>
+                    <div class="elseMain">
+                        <h1>坚持开源，共享未来</h1>
+                        <p>
+                            截止2023年5月16日，宽宽在Gitee及Github上共有开源仓库13个，除本人LOGO以及本人兽设以外，不对任何人的任何形式的使用做任何限制
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="else">
+                <div class="elesPage">
+                    <div class="elseBG"></div>
+                    <div class="elseMain">
+                        <h1>非盈利性质，全心钻研</h1>
+                        <p>
+                            目前宽宽共免费提供ChatGPT，CodeX，音乐平台破解等多项服务。坚持不收费、不限制的策略，助力每一个有需要的人
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <!-- 调整样式 -->
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            width: 400px;
-            margin: 0 auto;
-        }
-
-        h1 {
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        p {
-            color: #666;
-            text-align: center;
-            font-size: 14px;
-            padding: 10px 0;
-        }
-
-        .row {
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        span {
-            width: 100px;
-            line-height: 40px;
-        }
-
-        .edit {
-            width: 200px;
-            height: 30px;
-        }
-
-        .submit {
-            width: 304px;
-            height: 40px;
-            color: white;
-            background-color: orange;
-            border: none;
-        }
-
-    </style>
-
-    <!-- 实现提交 -->
-    <script>
-        // 给点击按钮注册点击事件
-        var submit = document.querySelector('.submit');
-        submit.onclick = function() {
-            //1. 获取到编辑框的内容
-            var edits = document.querySelectorAll('.edit');
-            var from = edits[0].value;
-            var to = edits[1].value;
-            var message = edits[2].value;
-            console.log(from + "," + to + "," + message);
-            if (from == '' || to == '' || message == '') {
-                return;
-            }
-            //2. 构造新元素
-            var row = document.createElement('div');
-            row.className = 'row';
-            row.innerHTML = from + '对' + to + '说：' + message;
-            //3. 添加新元素
-            var container = document.querySelector('.container');
-            container.appendChild(row);
-            //4. 同时清理之前输入框的内容
-            for (var i = 0; i < 3; i++) {
-                edits[i].value = '';
-            }
-        }
-    </script>
-
 </body>
-</html>
